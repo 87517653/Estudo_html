@@ -7,7 +7,19 @@
     <title>Tabelas</title>
     <style>
         body {
+
             font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
 
         table {
@@ -19,7 +31,7 @@
         th {
             border: 1px solid black;
             padding: 10px;
-            
+
         }
 
         thead,
@@ -27,12 +39,14 @@
             background-color: gray;
             color: white;
         }
-      td.num {
-        text-align: right;
-      }
-      td.num1{
-        text-align: center;
-      }
+
+        td.num {
+            text-align: right;
+        }
+
+        td.num1 {
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -41,6 +55,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+        CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -49,11 +64,12 @@
                 TR,TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>posição</th>
-                <th>Estado</th>
-                <th>população</th>
+                <th scope="col" style="width: 30px;">posição</th>
+                <th scope="col" style="width: 130px;">Estado</th>
+                <th scope="col" style="width: 85px;">população</th>
             </tr>
         </thead>
         <tbody>
